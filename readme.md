@@ -26,7 +26,7 @@ Ideaal voor highlight-compilaties, social media of als notitie tijdens live-comm
 1. Clone deze repository:
 
    ```bash
-   git clone https://github.com/<jouwgebruikersnaam>/youtube-timestamper.git
+   git clone https://github.com/voorburgcc/yt-timestamp-v2.git
    ```
 
 2. Ga in Chrome naar `chrome://extensions/`
@@ -65,4 +65,4 @@ youtube-timestamper/
 
 ## 📜 Licentie
 
-MIT © [Jouw Naam]
+MIT © Voorburg Cricket Club
