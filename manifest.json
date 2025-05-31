@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Timestamper & Video snapper",
+  "version": "1.8",
+  "description": "Displays the current played time of a YouTube video in a popup and copies it to the clipboard.",
+  "permissions": ["scripting", "activeTab", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "host_permissions": ["https://www.youtube.com/*"]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Time Tracker</title>
+  <script src="popup.js" defer></script>
+  <style>
+
+  body {
+		width:375px;
+		border:0;
+		font-family: Arial, sans-serif;
+		text-align: center;
+		margin: 2em 1em;
+		line-height:100%;
+		font-family: Arial, sans-serif;
+		text-align: center;
+		margin: 0px;
+		background-image: url('https://www.voorburgcc.nl/wp-content/uploads/T20-Netherlands-New-Zealand-2022-1320x743.jpg');
+		background-image: url('https://www.voorburgcc.nl/wp-content/uploads/IMG_88791.jpg');
+		background-size: cover; /* Ensure the image covers the entire background */
+		background-repeat: no-repeat;
+		background-position: center; /* Center the image */
+		background: linear-gradient(-45deg, #AAA, #f3f3f3);
+		background: linear-gradient(-45deg, #af072b, red);
+		border-radius: 8px; /* Optional: rounded corners for a polished look */
+		padding: 10px;
+		color: white;
+		
+	}
+	
+	button {
+		padding: 0.5em 1em;
+		font-size: 14pt;
+		color:#FFF;
+		background-color: #4caf50; /* Green background */
+		background-color:#2f337d; /* VCC blue button */
+		margin-bottom: 1em;
+		cursor: pointer;
+		border: none;
+		color: #FFF; /* White text */
+		border-radius: 4px; /* Rounded corners for the button */
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for the button */
+  }
+
+  button:hover {
+    background-color: #af072b; /* VCC red on hover */
+    background-color: white; /* VCC red on hover */
+	color: #2f337d;
+  }
+
+  #clip-duration {
+    padding: 0.5em 1em;
+    font-size: 14pt;
+    border-radius: 6px;
+    border: 0px solid #2f337d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    outline: none;
+    color: #2f337d;
+    background: #fff;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+	h1 {
+		font-size:13pt;
+		color:#2f337d;
+	}
+	#video-title {
+		font-size: 1.5em;
+		color:#af072b;
+		color:white;
+	}
+	#time-display {
+		font-size: 2em;
+		color:#af072b;
+		color:white;
+	}
+  </style>
+  
+</head>
+<body>
+	  <h1 id="video-title"></h1>
+	  <h2 id="time-display">No video detected, try Youtube 😊</h2>
+	  <button id="copy-time">Copy Timestamp</button>
+	  <button id="snapshot-frame">Take Snapshot</button>
+    <!-- Video Clip Controls -->
+    <div style="margin: 1em 0; display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <input type="number" id="clip-duration" min="1" max="60" value="10" style="width:60px;">
+      <label for="clip-duration" style="font-weight:bold; color:white; margin:0;">sec</label>
+      <button id="record-clip">Record Clip</button>
+    </div>
+    <div style="margin-bottom:1em;">
+		<button id="seek-back" title="Seek Backward">&#x2B05;   -1s</button>
+		<button id="seek-forward" title="Seek Forward">+1s   &#x279C;</button>
+		<div style="width:100%; text-align:center;">
+		  <span style="font-size:11px; color:white; display:block; margin-top:4px;">
+			Clips are saved as .webm (not mp4). Use an <a style="color:white" target="_blank" href="https://cloudconvert.com/webm-to-mp4">online converter</a> if needed.
+		  </span>
+		</div>
+    </div>
+		<p>Harold's Timestamper plugin</p>
+
+</body>
+</html>
+

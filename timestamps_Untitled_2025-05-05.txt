@@ -1,0 +1,14 @@
+# YouTube Video Timestamps
+# Format: HH:MM:SS - Description
+00:00:00 Start
+01:37:02 asdfas
+01:57:40df # YouTube Video Timestamps
+# Format: HH:MM:SS - Description
+00:00:00 Start
+01:37:02 asdfas
+01:57:40df 
+01:57:40 asdfasdf
+02:22:12 asdfasdf
+04:54:48 asdfasdfasdfasdfasdf
+04:54:48 asdfasdf
+02:22:12 asdfasdf
